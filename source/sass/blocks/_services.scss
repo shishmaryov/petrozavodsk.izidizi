@@ -1,0 +1,60 @@
+.services {
+
+  &__title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.55;
+    color: #101010;
+  }
+
+  &__item {
+
+  }
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+
+
+  &__text-block {
+    max-width: 560px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.09;
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__button {
+
+  }
+
+  &__img {
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &__download {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+  }
+}
+
+.description {
+
+  &__item {
+    font-size: 28px;
+    color:#1b1818;
+  }
+}

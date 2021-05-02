@@ -1,0 +1,67 @@
+.indicators {
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    vertical-align: top;
+    justify-content: space-between;
+    width: 495px;
+  }
+
+  &__item {
+    padding-top: 40px;
+    position: relative;
+  }
+}
+
+.indicator {
+  max-width: 150px;
+
+  &--time {
+    &::before {
+      content: url("../img/icons/time.svg");
+      width: 48px;
+      height: 54px;
+      position: absolute;
+      top: 0;
+      left: -7px;
+    }
+  }
+
+  &--price {
+    &::before {
+      content: url("../img/icons/price.svg");
+      width: 62px;
+      height: 62px;
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
+  }
+
+  &--bonus {
+    &::before {
+      content: url("../img/icons/bonus.svg");
+      width: 53px;
+      height: 53px;
+      position: absolute;
+      top: 0;
+      left: -7px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #ffffff;
+  }
+}

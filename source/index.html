@@ -6,55 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Дизайн интерьера на изи</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="index-page">
   <section class="promo">
-    <header class="header index-page__header">
-      <img src="img/logotypes/header-logo.svg" alt="izidizi.com" class="logo header__logo">
-      <nav class="nav header__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="" class="nav__link">Портфолио</a>
+    <div class="container">
+      <header class="header index-page__header">
+        <img src="img/logotypes/header-logo.svg" alt="izidizi.com" class="logo header__logo">
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="" class="nav__link">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Ремонт</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__call">
+          <a href="tel:+79535460398" class="call__number">8953 546 03 98</a>
+          <button type="button" class="call__button">Перезвоните мне</button>
+        </div>
+      </header>
+
+      <h1 class="promo__title">
+        Дизайн интерьера в Петрозаводске на изи от 5 400 ₽
+        <span class="promo__title--small">/ Квартира</span>
+      </h1>
+      <p class="promo__text">Сделаем интерьер удобным и современным, а вы сэкономите на ремонте квартиры</p>
+      <a class="button promo__button">Скачать пример проекта</a>
+      <div class="indicators promo__indicators">
+        <ul class="indicators__list">
+          <li class="indicator indicator--time indicators__item">
+            <h2 class="indicator__title">5 дней</h2>
+            <p class="indicator__text">Срок выполнения заказа</p>
           </li>
-          <li class="nav__item">
-            <a href="" class="nav__link">Отзывы</a>
+          <li class="indicator indicator--price indicators__item">
+            <h2 class="indicator__title">от 5 400 ₽</h2>
+            <p class="indicator__text">Стоимость дизайн-проекта</p>
           </li>
-          <li class="nav__item">
-            <a href="" class="nav__link">Ремонт</a>
+          <li class="indicator indicator--bonus indicators__item">
+            <h2 class="indicator__title">0 ₽</h2>
+            <p class="indicator__text">Бесплатный дизайн при заказе ремонта</p>
           </li>
         </ul>
-      </nav>
-      <div class="header__call">
-        <p class="call__number">8953 546 03 98</p>
-        <button type="button" class="button call__button">Перезвоните мне</button>
       </div>
-    </header>
-
-    <h1 class="promo__title">
-      Дизайн интерьера в Петрозаводске на изи от 5 400 ₽
-      <span class="promo__title--small">/ Квартира</span>
-    </h1>
-    <p class="promo__text">Сделаем интерьер удобным и современным, а вы сэкономите на ремонте квартиры</p>
-    <a class="promo__button">Скачать пример проекта</a>
-    <div class="indicators promo__indicators">
-      <ul class="indicators__list">
-        <li class="indicator indicator--time indicators__item">
-          <h2 class="indicator__title">5 дней</h2>
-          <p class="indicator__text">Срок выполнения заказа</p>
-        </li>
-        <li class="indicator indicator--price indicators__item">
-          <h2 class="indicator__title">от 5 400 ₽</h2>
-          <p class="indicator__text">Стоимость дизайн-проекта</p>
-        </li>
-        <li class="indicator indicator--bonus indicators__item">
-          <h2 class="indicator__title">0 ₽</h2>
-          <p class="indicator__text">Бесплатный дизайн при заказе ремонта</p>
-        </li>
-      </ul>
     </div>
+
   </section>
-  <section class="advantages">
+  <section class="container advantages">
     <div class="advantages__action"></div>
     <ul class="advantages__list">
       <li class="advantage advantage--time advantages__item">
@@ -71,14 +75,16 @@
       </li>
     </ul>
   </section>
-  <section class="gallery">
+  <section class="container gallery">
     <h2 class="gallery__title">Галерея</h2>
     <div class="gallery__photos">
-
+      <div class="gallery__item"></div>
+      <div class="gallery__item"></div>
+      <div class="gallery__item"></div>
     </div>
     <button type="button" class="button gallery__button">Наши работы</button>
   </section>
-  <section class="services">
+  <section class="container services">
     <h2 class="services__title">Виды наших услуг</h2>
     <div class="service services__item">
       <div class="service__text-block">
@@ -90,11 +96,16 @@
         </ul>
         <button type="button" class="button service__button">Заказать ОП! Планировочку</button>
       </div>
-      <img src="" alt="" class="service__img">
-      <a href="" class="button service__download">Скачать проект</a>
+      <div class="service__img-wrapper">
+        <a href="" class="button service__download">Скачать проект</a>
+        <img src="img/content-images/plan.webp" alt="Планировка от 2 200 ₽ и 6 дней" class="service__img">
+      </div>
     </div>
     <div class="service services__item">
-      <img src="" alt="" class="service__img">
+      <div class="service__img-wrapper">
+        <a href="" class="button service__download">Скачать проект</a>
+        <img src="img/content-images/concept-design.webp" alt="Концептуальный дизайн и 3D-модель от 3 200 ₽ и 5 дней" class="service__img">
+      </div>
       <a href="" class="button service__download">Скачать проект</a>
       <div class="service__text-block">
         <h3 class="service__title">Концептуальный дизайн и 3D-модель от 3 200 ₽ и 5 дней</h3>
@@ -118,11 +129,13 @@
         </ul>
         <button type="button" class="button service__button">Заказать дизайн-проект</button>
       </div>
-      <img src="" alt="" class="service__img">
-      <a href="" class="button service__download">Скачать проект</a>
+      <div class="service__img-wrapper">
+        <a href="" class="button service__download">Скачать проект</a>
+        <img src="img/content-images/design-projects.webp" alt="Дизайн-проект от 31 900 ₽ и 30 дней" class="service__img">
+      </div>
     </div>
   </section>
-  <section class="questions">
+  <section class="container questions">
     <div class="questions__text-block">
       <h2 class="questions__title">Ответьте на 10 вопросов о вашем будущем интерьере</h2>
       <p class="questions__text">Вы сэкономите наше время, а мы подарим вам скидку на дизайн проект и сэкономим ваши
@@ -131,11 +144,11 @@
     </div>
     <img src="" alt="" class="questions__img">
   </section>
-  <section class="clients">
+  <section class="container clients">
     <h2 class="clients__title">Более 500 довольных клиентов</h2>
     <div class="slider clients__slider"></div>
   </section>
-  <section class="repair">
+  <section class="container repair">
     <div class="repair__text-block">
       <h2 class="repair__title">Ремонт квартир на изи от 3 000 ₽ / м²</h2>
       <ul class="repair__list">
@@ -165,7 +178,7 @@
       </ul>
     </div>
   </section>
-  <section class="contact">
+  <section class="container contact">
     <div class="contact__text-block">
       <h2 class="contact__title">Скажите «Привет!»</h2>
       <div class="contact__block contact__block--office">
@@ -191,7 +204,7 @@
         allowfullscreen="true" style="position:relative;"></iframe>
     </div>
   </section>
-  <footer class="footer index-page__footer">
+  <footer class="container footer index-page__footer">
     <div class="social__icons">
       <a href="https://vk.com/izidizi_ptz" class="social__link">Vk</a>
       <a href="https://www.youtube.com/channel/UCHMy-rxQ1JWOvEkyLU_SRYg" class="social__link">Youtube</a>

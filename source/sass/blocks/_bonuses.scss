@@ -1,0 +1,20 @@
+.bonuses {
+
+}
+
+.bonus {
+
+  &__title {
+    font-size: 32px;
+  }
+
+  &__text {
+    font-size: 20px;
+    color: #101010;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: #1b1818;
+  }
+}

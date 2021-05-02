@@ -1,0 +1,62 @@
+.advantages {
+
+  &__action {}
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {}
+}
+
+.advantage {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  &--time {
+    &::before {
+      content: url("../img/smiles/time.webp");
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--designers {
+    &::before {
+      content: url("../img/smiles/artist.webp");
+      width: 100px;
+      height: 100px;
+      top: 30px;
+      left: 0;
+    }
+  }
+
+  &--projects {
+    &::before {
+      content: url("../img/smiles/like.webp");
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-left: 90px;
+  }
+
+  &__text {
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,44 @@
+.promo {
+  background-image: url("../img/backgrounds/promo-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    position: relative;
+    max-width: 685px;
+    font-weight: 600;
+    font-size: 80px;
+    color: #FFFFFF;
+
+    &::after {
+      content: url('../img/smiles/ok.webp');
+      position: absolute;
+      top: 170px;
+      right: -40px;
+      width: 144px;
+      height: 134px;
+    }
+
+    &--small {
+      font-weight: 300;
+      font-size: 32px;
+      vertical-align: text-top;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+
+  &__button {
+    margin: 20px 0;
+  }
+
+  &__indicators {
+
+  }
+}

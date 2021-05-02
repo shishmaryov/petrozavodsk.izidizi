@@ -1,0 +1,23 @@
+.call {
+
+  &__number {
+    width: 100%;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.55;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__button {
+    width: 215px;
+    height: 47px;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ffd600;
+    border-radius: 30px;
+  }
+}
