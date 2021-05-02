@@ -12,12 +12,28 @@ img {
 }
 
 .button {
-  background-color: #ffd600;
-  line-height: 1.55;
-  color: #1b1818;
+  padding: 20px 40px;
   font-weight: 400;
   font-size: 22px;
-  padding: 20px 35px;
+  line-height: 1.55;
+  color: #1b1818;
+  background-color: #ffd600;
   border: none;
   border-radius: 60px;
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

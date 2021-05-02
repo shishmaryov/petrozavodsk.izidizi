@@ -1,10 +1,16 @@
 .copyright {
 
   &__title {
-
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    text-align: center;
   }
 
   &__text {
-
+    font-weight: 300;
+    text-align: center;
   }
 }

@@ -1,14 +1,17 @@
 .header {
 
-  &__logo {
-
+  &__left {
+    display: flex;
+    vertical-align: bottom;
   }
 
-  &__nav {
+  &__logo {}
 
+  &__nav {
+    margin-left: 75px;
   }
 
   &__call {
-
+    margin-top: 85px;
   }
 }

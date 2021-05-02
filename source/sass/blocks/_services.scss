@@ -8,7 +8,7 @@
   }
 
   &__item {
-
+    margin-bottom: 50px;
   }
 }
 
@@ -19,23 +19,25 @@
 
 
   &__text-block {
-    max-width: 560px;
+    max-width: 450px;
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 44px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 40px;
     line-height: 1.09;
   }
 
   &__list {
+    margin-top: 0;
+    margin-bottom: 30px;
     padding-left: 0;
     list-style: none;
   }
 
-  &__button {
-
-  }
+  &__button {}
 
   &__img {
     &-wrapper {
@@ -45,8 +47,8 @@
 
   &__download {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: calc(50% - 72px);
+    left: calc(50% - 72px);
     text-decoration: none;
   }
 }
@@ -55,6 +57,8 @@
 
   &__item {
     font-size: 28px;
-    color:#1b1818;
+    line-height: 1.55;
+    color: #1b1818;
+    opacity: 0.7;
   }
 }

@@ -1,47 +1,77 @@
 .contact {
+  margin-top: 50px;
+  background-color: #fafafa;
 
-  &__text-block {
-
+  .container {
+    display: flex;
+    justify-content: space-between;
   }
 
+  &__text-block {}
+
   &__title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 600;
     font-size: 60px;
     line-height: 0.9;
-    font-weight: 600;
   }
 
   &__block {
-
-    &--office {
-
-    }
-
-    &--repair {
-
-    }
-
-    &--offers {
-
-    }
+    margin-bottom: 50px;
   }
 
   &__subtitle {
-    font-size: 20px;
-    opacity: 0.7;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 15px;
+    padding-left: 30px;
     font-weight: 300;
+    font-size: 20px;
     color: #2c2c2c;
+    opacity: 0.7;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &--office {
+      &::before {
+        content: url("../img/icons/location.svg");
+        top: -1px;
+        width: 16px;
+        height: 24px;
+      }
+    }
+
+    &--repair {
+      &::before {
+        content: url("../img/icons/phone.svg");
+        top: -1px;
+      }
+    }
+
+    &--offers {
+      &::before {
+        content: url("../img/icons/mail.svg");
+      }
+    }
   }
 
   &__text {
-    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
+    font-size: 28px;
   }
 
-  &__button {
-
-  }
+  &__button {}
 
   &__map {
-
+    width: 940px;
+    height: 670px;
   }
 }
