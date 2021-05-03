@@ -10,21 +10,45 @@
 </head>
 
 <body class="index-page">
-  <section class="promo">
+  <section id="promo" class="promo">
     <div class="container">
+      <header class="header--fixed">
+        <div class="container">
+          <img src="img/logotypes/header-logo-blue.svg" alt="izidizi.com" class="header--fixed__logo">
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a href="#feedbacks" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#repair" class="nav__link">Ремонт</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="phone">
+          <p class="phone__number">8 953 546 03 98</p>
+          <button class="phone__button">
+            <img src="img/icons/phone-restart.svg" alt="Закзать звонок" class="phone__icon">
+          </button>
+        </div>
+        </div>
+      </header>
       <header class="header index-page__header">
         <div class="header__left">
           <img src="img/logotypes/header-logo.svg" alt="izidizi.com" class="logo header__logo">
           <nav class="nav header__nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="" class="nav__link">Портфолио</a>
+                <a href="#gallery" class="nav__link">Портфолио</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Отзывы</a>
+                <a href="#feedbacks" class="nav__link">Отзывы</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Ремонт</a>
+                <a href="#repair" class="nav__link">Ремонт</a>
               </li>
             </ul>
           </nav>
@@ -83,43 +107,51 @@
       </li>
     </ul>
   </section>
-  <section class="container gallery">
+  <section id="gallery" class="container gallery">
     <h2 class="gallery__title">Галерея</h2>
-    <!--
-      <div class="gallery__photos">
-      <div class="gallery__item">
-        <img src="img/gallery/1.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/2.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/3.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/4.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/5.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/6.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/7.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/8.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/9.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
-      <div class="gallery__item">
-        <img src="img/gallery/10.webp" alt="Фотография интерьера" class="gallery__img">
-      </div>
+
+
+
+
+
+    <div class="gallery__photos">
+      <a href="img/gallery/800/1.png" data-fslightbox="gallery" class="gallery__item gallery__item--1">
+        <img src="img/gallery/800/1.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/2.png" data-fslightbox="gallery" class="gallery__item gallery__item--2">
+        <img src="img/gallery/800/2.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/3.png" data-fslightbox="gallery" class="gallery__item gallery__item--3">
+        <img src="img/gallery/800/3.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/4.png" data-fslightbox="gallery" class="gallery__item gallery__item--4">
+        <img src="img/gallery/800/4.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/5.png" data-fslightbox="gallery" class="gallery__item gallery__item--5">
+        <img src="img/gallery/800/5.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/6.png" data-fslightbox="gallery" class="gallery__item gallery__item--6">
+        <img src="img/gallery/800/6.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/7.png" data-fslightbox="gallery" class="gallery__item gallery__item--7">
+        <img src="img/gallery/800/7.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/8.png" data-fslightbox="gallery" class="gallery__item gallery__item--8">
+        <img src="img/gallery/800/8.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/9.png" data-fslightbox="gallery" class="gallery__item gallery__item--9">
+        <img src="img/gallery/800/9.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
+      <a href="img/gallery/800/10.png" class="gallery__item gallery__item--10">
+        <img src="img/gallery/800/10.png" alt="Фотография интерьера" class="gallery__img">
+      </a>
     </div>
-    -->
-    <img src="img/gallery/all.png" alt="" class="gallery__photo">
+
+
+
+
+
+
     <button type="button" class="button gallery__button">Наши работы</button>
   </section>
   <section class="container services">
@@ -138,7 +170,11 @@
         <a href="" class="service__download">
           <img src="img/icons/download.svg" alt="Скачать проект">
         </a>
-        <img src="img/content-images/plan.webp" alt="Планировка от 2 200 ₽ и 6 дней" class="service__img">
+        <picture>
+          <source srcset="img/content-images/plan.webp" type="image/webp">
+          <source srcset="img/content-images/plan.jpg" type="image/jpg">
+          <img src="img/content-images/plan.png" alt="Планировка от 2 200 ₽ и 6 дней" class="service__img">
+        </picture>
       </div>
     </div>
     <div class="service services__item">
@@ -146,8 +182,12 @@
         <a href="" class="service__download">
           <img src="img/icons/download.svg" alt="Скачать проект">
         </a>
-        <img src="img/content-images/concept-design.webp" alt="Концептуальный дизайн и 3D-модель от 3 200 ₽ и 5 дней"
-          class="service__img">
+        <picture>
+          <source srcset="img/content-images/concept-design.webp" type="image/webp">
+          <source srcset="img/content-images/concept-design.jpg" type="image/jpg">
+          <img src="img/content-images/concept-design.png" alt="Концептуальный дизайн и 3D-модель от 3 200 ₽ и 5 дней"
+            class="service__img">
+        </picture>
       </div>
       <div class="service__text-block">
         <h3 class="service__title">Концептуальный дизайн и 3D-модель от 3 200 ₽ и 5 дней</h3>
@@ -175,8 +215,12 @@
         <a href="" class="service__download">
           <img src="img/icons/download.svg" alt="Скачать проект">
         </a>
-        <img src="img/content-images/design-projects.webp" alt="Дизайн-проект от 31 900 ₽ и 30 дней"
-          class="service__img">
+        <picture>
+          <source srcset="img/content-images/design-project.webp" type="image/webp">
+          <source srcset="img/content-images/design-project.jpg" type="image/jpg">
+          <img src="img/content-images/design-project.png" alt="Дизайн-проект от 31 900 ₽ и 30 дней"
+            class="service__img">
+        </picture>
       </div>
     </div>
   </section>
@@ -187,53 +231,109 @@
         деньги!</p>
       <a href="https://quiz.izidizi.com/" target="_blank" class="button questions__button">Ответить на вопросы</a>
     </div>
-    <img src="img/content-images/questions.webp" alt="10 вопросов о вашем будущем интерьере" class="questions__img">
+    <picture>
+      <source srcset="img/content-images/questions.webp" type="image/webp">
+      <source srcset="img/content-images/questions.jpg" type="image/jpg">
+      <img src="img/content-images/questions.png" alt="10 вопросов о вашем будущем интерьере" class="questions__img">
+    </picture>
   </section>
-  <section class="container feedbacks">
+  <section id="feedbacks" class="container feedbacks">
     <h2 class="feedbacks__title">Более 500 довольных клиентов</h2>
     <div class="slider feedbacks__slider">
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback1.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback1.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback1.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback1.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback2.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback2.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback2.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback2.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback3.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback3.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback3.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback3.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback4.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback4.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback4.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback4.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback5.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback5.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback5.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback5.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback6.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback6.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback6.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback6.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback7.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback7.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback7.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback7.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback8.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback8.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback8.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback8.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback9.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback9.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback9.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback9.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback10.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback10.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback10.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback10.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback11.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback11.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback11.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback11.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback12.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback12.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback12.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback12.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
       <div class="feedbacks__item">
-        <img src="img/feedbacks/feedback13.png" alt="Отзыв клиента" class="feedbacks__img">
+        <picture>
+          <source srcset="img/feedbacks/feedback13.webp" type="image/webp">
+          <source srcset="img/feedbacks/feedback13.jpg" type="image/jpg">
+          <img src="img/feedbacks/feedback13.png" alt="Отзыв клиента" class="feedbacks__img">
+        </picture>
       </div>
     </div>
   </section>
-  <section class="container repair">
+  <section id="repair" class="container repair">
     <div class="repair__text-block">
       <h2 class="repair__title">Ремонт квартир на изи от 3 000 ₽ / м²</h2>
       <ul class="repair__list">
@@ -242,7 +342,11 @@
         <li class="repair__item">Все виды ремонтных работ</li>
       </ul>
     </div>
-    <img src="img/content-images/repair.png" alt="" class="repair__img">
+    <picture>
+      <source srcset="img/content-images/repair.webp" type="image/webp">
+      <source srcset="img/content-images/repair.jpg" type="image/jpg">
+      <img src="img/content-images/repair.png" alt="Ремонт квартир" class="repair__img">
+    </picture>
     <div class="repair__services">
       <ul class="bonuses repair__list">
         <li class="bonus">
@@ -318,10 +422,11 @@
       <a href="" class="nav__link">Реквизиты</a>
       <a href="" class="nav__link">Франшиза</a>
     </nav>
-    <a href="" class="footer__link">Наверх</a>
+    <a href="#promo" class="nav__link footer__link">Наверх</a>
   </footer>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/fslightbox.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 
