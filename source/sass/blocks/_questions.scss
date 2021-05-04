@@ -2,13 +2,14 @@
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  padding-bottom: 15px;
 
   &__text-block {
     margin-right: 50px;
   }
 
   &__title {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 0;
     font-weight: 600;
     font-size: 60px;
@@ -29,7 +30,7 @@
   }
 
   &__img {
-    max-width: 850px;
+    max-width: 650px;
     height: auto;
   }
 }

@@ -22,9 +22,9 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function(){
-  if ($(this).scrollTop() < 300) {
-      $('.header--fixed').addClass('disable');
+  if ($(this).scrollTop() > 500) {
+      $('.header--fixed').addClass('header--fixed-active');
   } else {
-    $('.header--fixed').removeClass('disable');
+    $('.header--fixed').removeClass('header--fixed-active');
   }
 });

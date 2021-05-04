@@ -20,17 +20,13 @@ img {
   background-color: #ffd600;
   border: none;
   border-radius: 60px;
+  cursor: pointer;
 }
 
 .flex-sb {
   display: flex;
   justify-content: space-between;
 }
-
-.disable {
-  display: none;
-}
-
 
 @keyframes rotation {
   0% {
