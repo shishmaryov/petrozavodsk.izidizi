@@ -4,12 +4,19 @@
     position: fixed;
     padding: 40px 45px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 2px;
     display: none;
 
     &--active {
       display: block;
     }
+  }
+
+  &__close {
+    position: absolute;
+    right: 45px;
+    top: 45px;
+    cursor: pointer;
   }
 
   &__title {
@@ -43,6 +50,15 @@
 
   &__button {
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    img {
+      width: 15px;
+      height: auto;
+      margin-bottom: -3px;
+      margin-left: 5px;
+    }
   }
 
   &--call {

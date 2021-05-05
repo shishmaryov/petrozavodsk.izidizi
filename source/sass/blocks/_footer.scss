@@ -23,12 +23,12 @@
     text-decoration: none;
 
     &::after {
-      content: url("../img/icons/arrow.svg");
+      content: url("../img/icons/arrow-up.svg");
       position: absolute;
       top: 0;
       right: 0;
-      width: 5px;
-      height: 17px;
+      width: 15px;
+      height: 15px;
       transform: rotate(270deg);
     }
   }

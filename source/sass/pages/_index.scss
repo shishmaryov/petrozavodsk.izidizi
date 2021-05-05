@@ -2,7 +2,8 @@
   font-family: "TTCommons";
 
   &__header {
-    vertical-align: middle;
+    align-items: center;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
   }

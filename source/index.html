@@ -67,7 +67,7 @@
       </h1>
       <p class="promo__text">Сделаем интерьер удобным и современным, а вы сэкономите на ремонте квартиры</p>
       <div class="flex-sb">
-        <button class="button promo__button">Скачать пример проекта</button>
+        <button id="buttonFormDownload" class="button promo__button">Скачать пример проекта</button>
         <div class="indicators promo__indicators">
           <ul class="indicators__list">
             <li class="indicator indicator--time indicators__item">
@@ -141,7 +141,7 @@
         <img src="img/gallery/l10.png" alt="Фотография интерьера" class="gallery__img">
       </a>
     </div>
-    <button type="button" class="button gallery__button">Наши работы</button>
+    <button type="button" class="button gallery__button" id="buttonGallery">Наши работы</button>
   </section>
   <section class="container services">
     <h2 class="services__title">Виды наших услуг</h2>
@@ -153,7 +153,7 @@
           <li class="description__item">2 варианта подборки интерьерных решений</li>
           <li class="description__item">3D-модель квартиры</li>
         </ul>
-        <button type="button" class="button service__button">Заказать ОП! Планировочку</button>
+        <button type="button" class="button service__button" id="buttonPlan">Заказать ОП! Планировочку</button>
       </div>
       <div class="service__img-wrapper">
         <a href="" class="service__download">
@@ -183,7 +183,7 @@
           <li class="description__item">Цветовая палитра, примеры для каждой комнаты</li>
           <li class="description__item">2 варианта подборки интерьерных решений</li>
         </ul>
-        <button type="button" class="button service__button">Заказать дизайн-концепт</button>
+        <button type="button" class="button service__button" id="buttonConcept">Заказать дизайн-концепт</button>
       </div>
     </div>
     <div class="service services__item">
@@ -196,7 +196,7 @@
           <li class="description__item">Все необходимые чертежи</li>
           <li class="description__item">Полная смета</li>
         </ul>
-        <button type="button" class="button service__button">Заказать дизайн-проект</button>
+        <button type="button" id="buttonProject" class="button service__button">Заказать дизайн-проект</button>
       </div>
       <div class="service__img-wrapper">
         <a href="" class="service__download">
@@ -354,7 +354,7 @@
           <h3 class="contact__subtitle contact__subtitle--offers">Пожелания и предложения</h3>
           <p class="contact__text">petrozavodsk@izidizi.com</p>
         </div>
-        <button class="button contact__button">Задать вопрос</button>
+        <button class="button contact__button" id="buttonQuestion">Задать вопрос</button>
       </div>
       <div class="contact__map" style="position:relative;overflow:hidden;"><a
           href="https://yandex.ru/maps/org/izidizi/51395318273/?utm_medium=mapframe&utm_source=maps"
@@ -403,12 +403,102 @@
   <section class="modal">
     <div class="modal__overlay"></div>
     <div class="form__wrapper form--call__wrapper" id="formPhone">
+      <span id="closeFormPhone" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+      </span>
       <h2 class="form__title">Вам перезвонить?</h2>
       <p class="form__text">Заполните форму и наши менеджеры свяжутся с вами в течении рабочего дня</p>
       <form action="#" class="form">
         <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
         <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
-        <button type="submit" class="button form__button">Отправить</button>
+        <button type="submit" class="button form__button">Отправить
+          <img src="img/icons/arrow-up.svg" alt="">
+        </button>
+      </form>
+    </div>
+    <div class="form__wrapper form--call__wrapper" id="formDownload">
+      <span id="closeFormDownload" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+      </span>
+      <h2 class="form__title">Вы переходите к скачиванию примера проекта</h2>
+      <p class="form__text">Заполните форму, чтобы продолжить</p>
+      <form action="#" class="form">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
+        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+        <button type="submit" class="button form__button">Скачать пример</button>
+      </form>
+    </div>
+    <div class="form__wrapper form--call__wrapper" id="formGallery">
+      <span id="closeFormGallery" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+      </span>
+      <h2 class="form__title">Посмотрите наше портфолио</h2>
+      <p class="form__text">Заполните форму ниже для перехода
+        на наш профиль в Pinterest</p>
+      <form action="#" class="form">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
+        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+        <button type="submit" class="button form__button">Смотреть работы
+          <img src="img/icons/arrow-up.svg" alt="">
+        </button>
+      </form>
+    </div>
+    <div class="form__wrapper form--call__wrapper" id="formPlan">
+      <span id="closeFormPlan" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+      </span>
+      <h2 class="form__title">Заказ ОП! Планировочки</h2>
+      <p class="form__text">Заполните форму ниже и мы свяжемся
+        для дальнейшей консультации</p>
+      <form action="#" class="form">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
+        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+        <button type="submit" class="button form__button">Заказать "ОП! Планировочку"
+        </button>
+      </form>
+    </div>
+    <div class="form__wrapper form--call__wrapper" id="formConcept">
+      <span id="closeFormConcept" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+      </span>
+      <h2 class="form__title">Заказ дизайн-концепции</h2>
+      <p class="form__text">Заполните форму ниже и мы свяжемся
+        для дальнейшей консультации</p>
+      <form action="#" class="form">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
+        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+        <button type="submit" class="button form__button">Заказать дизайн-концепцию
+        </button>
+      </form>
+    </div>
+    <div class="form__wrapper form--call__wrapper" id="formProject">
+      <span id="closeFormProject" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+      </span>
+      <h2 class="form__title">Заказ дизайн-проекта</h2>
+      <p class="form__text">Заполните форму ниже и мы свяжемся
+        для дальнейшей консультации</p>
+      <form action="#" class="form">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
+        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+        <button type="submit" class="button form__button">Заказать дизайн-проект
+        </button>
+      </form>
+    </div>
+    <div class="form__wrapper form--call__wrapper" id="formQuestion">
+      <span id="closeFormQuestion" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+      </span>
+      <h2 class="form__title">Возник вопрос?</h2>
+      <p class="form__text">Заполните форму ниже и мы свяжемся
+        для дальнейшей консультации</p>
+      <form action="#" class="form">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
+        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+        <input type="text" name="question" placeholder="Напишите ваш вопрос здесь" class="form__input" required>
+        <button type="submit" class="button form__button">Отправить
+          <img src="img/icons/arrow-up.svg" alt="">
+        </button>
       </form>
     </div>
   </section>

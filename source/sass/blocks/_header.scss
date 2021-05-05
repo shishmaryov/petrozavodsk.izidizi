@@ -2,17 +2,20 @@
 
   &__left {
     display: flex;
-    vertical-align: bottom;
+    align-items: center;
   }
 
-  &__logo {}
+  &__logo {
+    max-width: 186px;
+    max-height: 52px;
+  }
 
   &__nav {
     margin-left: 75px;
   }
 
   &__call {
-    margin-top: 85px;
+    margin-top: 0;
   }
 
 
