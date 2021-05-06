@@ -135,9 +135,10 @@ var selector = document.querySelectorAll('input[type="tel"]');
 var im = new Inputmask("+7 (999) 999-99-99");
 im.mask(selector);
 
-var validateForms = function(selector, rules, succesModal, yaGoal) {
+var validateForms = function(selector, rules, messages, succesModal, yaGoal) {
   new window.JustValidate(selector, {
     rules: rules,
+    messages: messages,
     submitHandler: function(form) {
       var formData = new FormData(form);
 
@@ -171,7 +172,11 @@ validateForms(
     required: true,
     minLength: 10,
     maxLength: 30
-  }
+  },
+},
+{
+  name: 'Введите имя',
+  tel: 'Введите корректный номер телефона'
 },
   '.thanks-popup',
   'send-goal'
