@@ -1218,7 +1218,8 @@ img {
   height: 60px;
   margin-bottom: 30px;
   padding-left: 10px;
-  border: 1px solid #c9c9c9; }
+  border: 1px solid #c9c9c9;
+  position: relative; }
   .form__input::-webkit-input-placeholder {
     font-size: 16px;
     line-height: 1.33; }
@@ -1234,6 +1235,9 @@ img {
   .form__input::placeholder {
     font-size: 16px;
     line-height: 1.33; }
+
+.form .js-validate-error-label {
+  font-size: 16px; }
 
 .form__button {
   width: 100%;

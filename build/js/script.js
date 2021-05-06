@@ -32,99 +32,147 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
-      $('.button--phone').click(function () {
-            $("#formPhone").toggleClass("form__wrapper--active");
-            $('.modal__overlay').addClass('modal__overlay--active');
-});
+  $('.button--phone').click(function () {
+    $("#formPhone").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
 });
 
 $(document).ready(function () {
   $('#closeFormPhone').click(function () {
-        $("#formPhone").removeClass("form__wrapper--active");
-        $('.modal__overlay').removeClass('modal__overlay--active');
-});
+    $("#formPhone").removeClass("form__wrapper--active");
+    $('.modal__overlay').removeClass('modal__overlay--active');
+  });
 });
 
 $(document).ready(function () {
   $('#buttonFormDownload').click(function () {
-        $("#formDownload").toggleClass("form__wrapper--active");
-        $('.modal__overlay').addClass('modal__overlay--active');
-});
+    $("#formDownload").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
 });
 
 $(document).ready(function () {
-$('#closeFormDownload').click(function () {
+  $('#closeFormDownload').click(function () {
     $("#formDownload").removeClass("form__wrapper--active");
     $('.modal__overlay').removeClass('modal__overlay--active');
-});
+  });
 });
 
 $(document).ready(function () {
   $('#buttonGallery').click(function () {
-        $("#formGallery").toggleClass("form__wrapper--active");
-        $('.modal__overlay').addClass('modal__overlay--active');
-});
+    $("#formGallery").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
 });
 
 $(document).ready(function () {
-$('#closeFormGallery').click(function () {
+  $('#closeFormGallery').click(function () {
     $("#formGallery").removeClass("form__wrapper--active");
     $('.modal__overlay').removeClass('modal__overlay--active');
-});
+  });
 });
 
 $(document).ready(function () {
   $('#buttonPlan').click(function () {
-        $("#formPlan").toggleClass("form__wrapper--active");
-        $('.modal__overlay').addClass('modal__overlay--active');
-});
+    $("#formPlan").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
 });
 
 $(document).ready(function () {
-$('#closeFormPlan').click(function () {
+  $('#closeFormPlan').click(function () {
     $("#formPlan").removeClass("form__wrapper--active");
     $('.modal__overlay').removeClass('modal__overlay--active');
-});
+  });
 });
 
 $(document).ready(function () {
   $('#buttonConcept').click(function () {
-        $("#formConcept").toggleClass("form__wrapper--active");
-        $('.modal__overlay').addClass('modal__overlay--active');
-});
+    $("#formConcept").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
 });
 
 $(document).ready(function () {
-$('#closeFormConcept').click(function () {
+  $('#closeFormConcept').click(function () {
     $("#formConcept").removeClass("form__wrapper--active");
     $('.modal__overlay').removeClass('modal__overlay--active');
-});
+  });
 });
 
 $(document).ready(function () {
   $('#buttonProject').click(function () {
-        $("#formProject").toggleClass("form__wrapper--active");
-        $('.modal__overlay').addClass('modal__overlay--active');
-});
+    $("#formProject").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
 });
 
 $(document).ready(function () {
-$('#closeFormProject').click(function () {
+  $('#closeFormProject').click(function () {
     $("#formProject").removeClass("form__wrapper--active");
     $('.modal__overlay').removeClass('modal__overlay--active');
-});
+  });
 });
 
 $(document).ready(function () {
   $('#buttonQuestion').click(function () {
-        $("#formQuestion").toggleClass("form__wrapper--active");
-        $('.modal__overlay').addClass('modal__overlay--active');
-});
+    $("#formQuestion").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
 });
 
 $(document).ready(function () {
-$('#closeFormQuestion').click(function () {
+  $('#closeFormQuestion').click(function () {
     $("#formQuestion").removeClass("form__wrapper--active");
     $('.modal__overlay').removeClass('modal__overlay--active');
+  });
 });
-});
+
+
+
+var selector = document.querySelectorAll('input[type="tel"]');
+var im = new Inputmask("+7 (999) 999-99-99");
+im.mask(selector);
+
+var validateForms = function(selector, rules, succesModal, yaGoal) {
+  new window.JustValidate(selector, {
+    rules: rules,
+    submitHandler: function(form) {
+      var formData = new FormData(form);
+
+      var xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            console.log('Отправлено');
+          }
+        }
+      }
+
+      xhr.open('POST', '../mail.php', true);
+      xhr.send(formData);
+
+      form.reset();
+    }
+  });
+}
+
+validateForms(
+  '.form',
+{
+  name:{
+    required: true,
+    minLength: 3,
+    maxLength: 30
+  },
+  tel:{
+    required: true,
+    minLength: 10,
+    maxLength: 30
+  }
+},
+  '.thanks-popup',
+  'send-goal'
+  );

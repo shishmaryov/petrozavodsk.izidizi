@@ -128,3 +128,51 @@ $(document).ready(function () {
     $('.modal__overlay').removeClass('modal__overlay--active');
   });
 });
+
+
+
+var selector = document.querySelectorAll('input[type="tel"]');
+var im = new Inputmask("+7 (999) 999-99-99");
+im.mask(selector);
+
+var validateForms = function(selector, rules, succesModal, yaGoal) {
+  new window.JustValidate(selector, {
+    rules: rules,
+    submitHandler: function(form) {
+      var formData = new FormData(form);
+
+      var xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            console.log('Отправлено');
+          }
+        }
+      }
+
+      xhr.open('POST', '../mail.php', true);
+      xhr.send(formData);
+
+      form.reset();
+    }
+  });
+}
+
+validateForms(
+  '.form',
+{
+  name:{
+    required: true,
+    minLength: 3,
+    maxLength: 30
+  },
+  tel:{
+    required: true,
+    minLength: 10,
+    maxLength: 30
+  }
+},
+  '.thanks-popup',
+  'send-goal'
+  );

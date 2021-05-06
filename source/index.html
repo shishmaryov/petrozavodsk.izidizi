@@ -395,10 +395,7 @@
     </nav>
     <a href="#promo" class="nav__link footer__link">Наверх</a>
   </footer>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/fslightbox.js"></script>
-  <script src="js/script.min.js"></script>
+  
 
   <section class="modal">
     <div class="modal__overlay"></div>
@@ -408,9 +405,11 @@
       </span>
       <h2 class="form__title">Вам перезвонить?</h2>
       <p class="form__text">Заполните форму и наши менеджеры свяжутся с вами в течении рабочего дня</p>
-      <form action="#" class="form">
-        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
-        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+      <form action="mail.php" method="POST" class="form" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="shishmaryovkonstantin@gmail.com">
+        <input type="hidden" name="form_subject" value="Заказ обратного звонка">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name" data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel" data-validate-field="tel">
         <button type="submit" class="button form__button">Отправить
           <img src="img/icons/arrow-up.svg" alt="">
         </button>
@@ -422,9 +421,11 @@
       </span>
       <h2 class="form__title">Вы переходите к скачиванию примера проекта</h2>
       <p class="form__text">Заполните форму, чтобы продолжить</p>
-      <form action="#" class="form">
-        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
-        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+      <form action="mail.php" method="POST" class="form" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="shishmaryovkonstantin@gmail.com">
+        <input type="hidden" name="form_subject" value="Скачивание примера проекта">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name" data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel" data-validate-field="tel">
         <button type="submit" class="button form__button">Скачать пример</button>
       </form>
     </div>
@@ -435,9 +436,11 @@
       <h2 class="form__title">Посмотрите наше портфолио</h2>
       <p class="form__text">Заполните форму ниже для перехода
         на наш профиль в Pinterest</p>
-      <form action="#" class="form">
-        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
-        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+      <form action="mail.php" method="POST" class="form" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="shishmaryovkonstantin@gmail.com">
+        <input type="hidden" name="form_subject" value="Просмотр портфолио">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name" data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel" data-validate-field="tel">
         <button type="submit" class="button form__button">Смотреть работы
           <img src="img/icons/arrow-up.svg" alt="">
         </button>
@@ -450,9 +453,11 @@
       <h2 class="form__title">Заказ ОП! Планировочки</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="#" class="form">
-        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
-        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+      <form action="mail.php" method="POST" class="form" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="shishmaryovkonstantin@gmail.com">
+        <input type="hidden" name="form_subject" value="Заказ планировки">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name" data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel" data-validate-field="tel">
         <button type="submit" class="button form__button">Заказать "ОП! Планировочку"
         </button>
       </form>
@@ -464,9 +469,11 @@
       <h2 class="form__title">Заказ дизайн-концепции</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="#" class="form">
-        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
-        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+      <form action="mail.php" method="POST" class="form" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="shishmaryovkonstantin@gmail.com">
+        <input type="hidden" name="form_subject" value="Заказ дизайн-концепции">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name" data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel" data-validate-field="tel">
         <button type="submit" class="button form__button">Заказать дизайн-концепцию
         </button>
       </form>
@@ -478,9 +485,11 @@
       <h2 class="form__title">Заказ дизайн-проекта</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="#" class="form">
-        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
-        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+      <form action="mail.php" method="POST" class="form" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="shishmaryovkonstantin@gmail.com">
+        <input type="hidden" name="form_subject" value="Заказ дизайн-проекта">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name" data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel" data-validate-field="tel">
         <button type="submit" class="button form__button">Заказать дизайн-проект
         </button>
       </form>
@@ -492,16 +501,27 @@
       <h2 class="form__title">Возник вопрос?</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="#" class="form">
-        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input" required>
-        <input type="text" name="phone" placeholder="(999) 99-99" class="form__input" required>
+      <form action="mail.php" method="POST" class="form">
+        <input type="hidden" name="admin_email[]" value="shishmaryovkonstantin@gmail.com">
+        <input type="hidden" name="form_subject" value="Заявка на консультацию">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name" data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel" data-validate-field="tel">
         <input type="text" name="question" placeholder="Напишите ваш вопрос здесь" class="form__input" required>
         <button type="submit" class="button form__button">Отправить
           <img src="img/icons/arrow-up.svg" alt="">
         </button>
       </form>
     </div>
+    <div class="thanks-popup">
+      <h3 class="thanks-popup__text">Спасибо, данные отправлены</h3>
+    </div>
   </section>
+  <script src="js/jquery-3.6.0.min.js" defer></script>
+  <script src="js/slick.min.js" defer></script>
+  <script src="js/fslightbox.js" defer></script>
+  <script src="js/inputmask.min.js" defer></script>
+  <script src="js/just-validate.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
 </body>
 
 </html>
