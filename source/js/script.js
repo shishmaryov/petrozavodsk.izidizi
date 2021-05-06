@@ -147,10 +147,11 @@ var validateForms = function(selector, rules, messages, succesModal, yaGoal) {
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
+            document.querySelector(selector).innerHTML = '<h3 class="thanks__text">Спасибо! Данные успешно отправлены</h3>';
             console.log('Отправлено');
           }
         }
-      }
+      },
 
       xhr.open('POST', '../mail.php', true);
       xhr.send(formData);
@@ -158,7 +159,9 @@ var validateForms = function(selector, rules, messages, succesModal, yaGoal) {
       form.reset();
     }
   });
-}
+};
+
+
 
 validateForms(
   '.form',
@@ -178,6 +181,162 @@ validateForms(
   name: 'Введите имя',
   tel: 'Введите корректный номер телефона'
 },
-  '.thanks-popup',
   'send-goal'
   );
+
+
+
+  validateForms(
+    '.form--2',
+  {
+    name:{
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel:{
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  },
+  {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  $('.form--2').innerHTML = '<h3 class="thanks__text">Спасибо! Данные успешно отправлены</h3>',
+    'send-goal'
+    );
+
+    validateForms(
+      '.form--3',
+    {
+      name:{
+        required: true,
+        minLength: 3,
+        maxLength: 30
+      },
+      tel:{
+        required: true,
+        minLength: 10,
+        maxLength: 30
+      },
+    },
+    {
+      name: 'Введите имя',
+      tel: 'Введите корректный номер телефона'
+    },
+      '.thanks-popup',
+      'send-goal'
+      );
+
+      validateForms(
+        '.form--4',
+      {
+        name:{
+          required: true,
+          minLength: 3,
+          maxLength: 30
+        },
+        tel:{
+          required: true,
+          minLength: 10,
+          maxLength: 30
+        },
+      },
+      {
+        name: 'Введите имя',
+        tel: 'Введите корректный номер телефона'
+      },
+        '.thanks-popup',
+        'send-goal'
+        );
+
+        validateForms(
+          '.form--5',
+        {
+          name:{
+            required: true,
+            minLength: 3,
+            maxLength: 30
+          },
+          tel:{
+            required: true,
+            minLength: 10,
+            maxLength: 30
+          },
+        },
+        {
+          name: 'Введите имя',
+          tel: 'Введите корректный номер телефона'
+        },
+          '.thanks-popup',
+          'send-goal'
+          );
+
+          validateForms(
+            '.form--6',
+          {
+            name:{
+              required: true,
+              minLength: 3,
+              maxLength: 30
+            },
+            tel:{
+              required: true,
+              minLength: 10,
+              maxLength: 30
+            },
+          },
+          {
+            name: 'Введите имя',
+            tel: 'Введите корректный номер телефона'
+          },
+            '.thanks-popup',
+            'send-goal'
+            );
+
+            validateForms(
+              '.form--7',
+            {
+              name:{
+                required: true,
+                minLength: 3,
+                maxLength: 30
+              },
+              tel:{
+                required: true,
+                minLength: 10,
+                maxLength: 30
+              },
+            },
+            {
+              name: 'Введите имя',
+              tel: 'Введите корректный номер телефона'
+            },
+              '.thanks-popup',
+              'send-goal'
+              );
+
+              validateForms(
+                '.form--8',
+              {
+                name:{
+                  required: true,
+                  minLength: 3,
+                  maxLength: 30
+                },
+                tel:{
+                  required: true,
+                  minLength: 10,
+                  maxLength: 30
+                },
+              },
+              {
+                name: 'Введите имя',
+                tel: 'Введите корректный номер телефона'
+              },
+                '.thanks-popup',
+                'send-goal'
+                );
+
