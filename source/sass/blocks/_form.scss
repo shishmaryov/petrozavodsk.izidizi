@@ -48,13 +48,9 @@
       line-height: 1.33;
     }
 
-    &--name {
+    &--name {}
 
-    }
-
-    &--tel {
-
-    }
+    &--tel {}
   }
 
   &__button {
@@ -72,8 +68,8 @@
   }
 
   &__link {
-    text-decoration: none;
     color: #1b1818;
+    text-decoration: none;
   }
 
   &--call {
@@ -97,7 +93,7 @@
   font-weight: 600;
   font-size: 20px;
   text-align: center;
+  color: #fff;
   background: #62C584;
   border-radius: 2px;
-  color: #fff;
 }

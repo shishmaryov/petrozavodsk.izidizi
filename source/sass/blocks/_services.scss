@@ -1,12 +1,12 @@
 .services {
 
   &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 600;
     font-size: 70px;
     line-height: 1.55;
     color: #101010;
-    margin-top: 0;
-    margin-bottom: 50px;
   }
 
   &__item {
@@ -44,6 +44,7 @@
   &__img {
     max-width: 600px;
     height: auto;
+
     &-wrapper {
       position: relative;
     }
