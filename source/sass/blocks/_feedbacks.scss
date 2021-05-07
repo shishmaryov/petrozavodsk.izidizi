@@ -5,8 +5,13 @@
     margin-top: 0;
     margin-bottom: 50px;
     font-weight: 600;
-    font-size: 62px;
+    font-size: 40px;
+    font-size: 32px;
     text-align: center;
+
+    @media(min-width: 768px) {
+      font-size: 60px;
+    }
   }
 
   &__slider {}
@@ -14,10 +19,15 @@
   &__item {}
 
   &__img {
-    max-width: 560px;
-    max-height: 800px;
-    margin-right: calc(50% - 280px);
-    margin-left: calc(50% - 280px);
+    width: 320px;
+    height: auto;
+    margin-left: calc(50% - 160px);
+
+    @media(min-width: 768px) {
+      width: 560px;
+      height: auto;
+      margin-left: calc(50% - 280px);
+    }
   }
 
   /* Слайдер */
@@ -75,14 +85,14 @@
 
   /* Стрелка влево */
   .slick-arrow.slick-prev {
-    left: 290px;
+    left: 50px;
     background-image: url("../img/icons/arrow.svg");
     transform: rotate(180deg);
   }
 
   /* Стрелка вправо */
   .slick-arrow.slick-next {
-    right: 340px;
+    right: 50px;
     background-image: url("../img/icons/arrow.svg");
   }
 

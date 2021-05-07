@@ -1,12 +1,24 @@
 .indicators {
 
   &__list {
-    display: flex;
-    justify-content: space-between;
-    width: 495px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
     list-style: none;
-    vertical-align: top;
+    text-align: center;
+
+
+    @media(min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: top;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    @media(min-width: 1024px) {
+      width: 495px;
+    }
   }
 
   &__item {
@@ -16,16 +28,28 @@
 }
 
 .indicator {
-  max-width: 150px;
+
+  margin-bottom: 15px;
+
+  @media(min-width: 1024px) {
+    max-width: 150px;
+    margin-bottom: 0;
+  }
+
+
 
   &--time {
     &::before {
       content: url("../img/icons/time.svg");
       position: absolute;
       top: 0;
-      left: -7px;
+      left: calc(50% - 24px);
       width: 48px;
       height: 54px;
+
+      @media(min-width:768px) {
+        left: -7px;
+      }
     }
   }
 
@@ -34,9 +58,13 @@
       content: url("../img/icons/price.svg");
       position: absolute;
       top: 0;
-      left: -10px;
+      left: calc(50% - 31px);
       width: 62px;
       height: 62px;
+
+      @media(min-width:768px) {
+        left: -10px;
+      }
     }
   }
 
@@ -46,8 +74,13 @@
       position: absolute;
       top: 0;
       left: -7px;
+      left: calc(50% - 26.5px);
       width: 53px;
       height: 53px;
+
+      @media(min-width: 768px) {
+        left: -7px;
+      }
     }
   }
 

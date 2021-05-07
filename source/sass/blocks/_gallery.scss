@@ -6,15 +6,23 @@
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
+
+    @media(min-width: 768px) {
+      font-size: 60px;
+    }
   }
 
   &__photos {
     display: grid;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 15px;
+
+    @media(min-width:768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     @media(min-width: 1024px) {
       grid-template-columns: repeat(5, 1fr);

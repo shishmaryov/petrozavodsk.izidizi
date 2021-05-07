@@ -1,36 +1,77 @@
 .questions {
-  display: flex;
-  justify-content: space-between;
   margin-top: 100px;
   padding-bottom: 15px;
 
+  @media(min-width:1024px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
   &__text-block {
-    margin-right: 50px;
+    margin-bottom: 50px;
+
+    @media(min-width:1024px) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
     margin-top: 0px;
     margin-bottom: 0;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 40px;
+    text-align: center;
+
+    @media(min-width:768px) {
+      font-size: 60px;
+    }
+
+    @media(min-width:1024px) {
+      text-align: left;
+    }
   }
 
   &__text {
     margin-top: 15px;
     margin-bottom: 50px;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 20px;
+    text-align: center;
     color: #2f2f2f;
     opacity: 0.7;
+
+    @media(min-width:768px) {
+      font-size: 28px;
+    }
+
+    @media(min-width:1024px) {
+      text-align: left;
+    }
   }
 
   &__button {
+    margin-left: calc(50% - 135px);
     color: #000;
     text-decoration: none;
+
+    @media(min-width: 1024px) {
+      margin-left: 0;
+    }
   }
 
   &__img {
-    max-width: 650px;
-    height: auto;
+
+    @media(min-width:768px) {
+      margin-left: calc(50% - 325px);
+    }
+
+
+    @media(min-width:1024px) {
+      max-width: 650px;
+      height: auto;
+      margin-left: 0;
+    }
   }
 }

@@ -32,6 +32,21 @@ $(window).scroll(function () {
 });
 
 $(document).ready(function () {
+  $('.header__burger').click(function () {
+    $(".nav--mobile").toggleClass("nav--mobile-active");
+  });
+});
+
+
+
+$(document).ready(function () {
+  $('.nav--mobile__close').click(function () {
+    $(".nav--mobile-active").removeClass("nav--mobile-active");
+  });
+});
+
+
+$(document).ready(function () {
   $('.button--phone').click(function () {
     $("#formPhone").toggleClass("form__wrapper--active");
     $('.modal__overlay').addClass('modal__overlay--active');

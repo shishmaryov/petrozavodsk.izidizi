@@ -40,6 +40,7 @@
         <div class="header__left">
           <img src="img/logotypes/header-logo.svg" alt="izidizi.com" class="logo header__logo">
           <nav class="nav header__nav">
+
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="#gallery" class="nav__link">Портфолио</a>
@@ -59,14 +60,43 @@
           </p>
           <button type="button" class="call__button button--phone">Перезвоните мне</button>
         </div>
+        <a href="#" class="header__burger"><span></span></a>
       </header>
+      <nav class="nav--mobile">
+        <span class="nav--mobile__close">
+          <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
+              <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+              <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            </g>
+          </svg>
+        </span>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#gallery" class="nav__link">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a href="#feedbacks" class="nav__link">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#repair" class="nav__link">Ремонт</a>
+          </li>
+          <li class="nav__item">
+            <a href="#repair" class="nav__link"><button type="button" class="call__button button--phone">Перезвоните
+                мне</button></a>
+          </li>
+        </ul>
+      </nav>
 
       <h1 class="promo__title">
         Дизайн интерьера в Петрозаводске на изи от 5 400 ₽
         <span class="promo__title--small">/ Квартира</span>
       </h1>
       <p class="promo__text">Сделаем интерьер удобным и современным, а вы сэкономите на ремонте квартиры</p>
-      <div class="flex-sb">
+      <div class="promo__flex-sb">
         <button id="buttonFormDownload" class="button promo__button">
           Скачать пример проекта
         </button>
@@ -167,7 +197,7 @@
         </picture>
       </div>
     </div>
-    <div class="service services__item">
+    <div class="service services__item service2">
       <div class="service__img-wrapper">
         <span id="buttonConceptDownload" class="service__download">
           <img src="img/icons/download.svg" alt="Скачать проект">
@@ -446,9 +476,11 @@
           data-validate-field="name">
         <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
           data-validate-field="tel">
-        <button type="submit" class="button form__button">
-          <a href="img/content-images/repair.jpg" class="form__link form--2__link" target="_blank">Скачать
-            пример</a></button>
+
+        <a href="img/content-images/repair.jpg" class="form__link form--2__link" target="_blank">
+          <button type="submit" class="button form__button">Скачать пример</button>
+        </a>
+
       </form>
     </div>
     <div class="form__wrapper form--call__wrapper" id="formGallery">
@@ -473,11 +505,11 @@
           data-validate-field="name">
         <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
           data-validate-field="tel">
-        <button type="submit" class="button form__button">
-          <a href="https://id.pinterest.com/izidizi_com/" target="_blank" class="form__link">
-            Смотреть работы
-            <img src="img/icons/arrow-up.svg" alt=""></a>
-        </button>
+        <a href="https://id.pinterest.com/izidizi_com/" target="_blank" class="form__link">
+          <button type="submit" class="button form__button">Смотреть работы</button>
+          <img src="img/icons/arrow-up.svg" alt="">
+        </a>
+
       </form>
     </div>
     <div class="form__wrapper form--call__wrapper" id="formPlan">
@@ -527,12 +559,12 @@
           data-validate-field="name">
         <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
           data-validate-field="tel">
+
         <a href="img/content-images/plan.jpg" target="_blank" class="form__link">
           <button type="submit" class="button form__button">
             Скачать "ОП! Планировочку"
           </button>
         </a>
-
       </form>
     </div>
     <div class="form__wrapper form--call__wrapper" id="formConcept">
@@ -582,12 +614,8 @@
           data-validate-field="name">
         <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
           data-validate-field="tel">
-        <a href="img/content-images/design-project.jpg" target="_blank" class="form__link">
-          <button type="submit" class="button form__button">
-            Cкачать дизайн-концепцию
-          </button>
-        </a>
-
+        <a href="img/content-images/concept-design.jpg" class="form__link">
+          <button type="submit" class="button form__button">Cкачать дизайн-концепцию</button></a>
       </form>
     </div>
     <div class="form__wrapper form--call__wrapper" id="formProject">
@@ -638,11 +666,7 @@
         <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
           data-validate-field="tel">
         <a href="img/content-images/design-project.jpg" target="_blank" class="form__link">
-          <button type="submit" class="button form__button">
-            Cкачать дизайн-проект
-          </button>
-        </a>
-
+          <button type="submit" class="button form__button">Cкачать дизайн-проект</button></a>
       </form>
     </div>
     <div class="form__wrapper form--call__wrapper" id="formQuestion">

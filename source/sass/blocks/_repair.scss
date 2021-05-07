@@ -1,19 +1,34 @@
 .repair {
+  margin-bottom: 100px;
 
   &__text-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 50px;
+
+    @media(mn-width:1024px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__title {
     max-width: 560px;
     margin-top: 0;
     margin-bottom: 0;
+    margin-bottom: 30px;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 40px;
+    text-align: center;
     color: #101010;
+
+    @media(min-width:768px) {
+      font-size: 60px;
+      text-align: left;
+    }
+
+    @media(min-width: 1024px) {
+      margin-bottom: 0;
+    }
   }
 
   &__list {

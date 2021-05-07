@@ -4,35 +4,86 @@
     width: 150px;
     height: 150px;
     margin-top: 25px;
+    margin-left: calc(50% - 75px);
     animation-name: rotation;
     animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+
+    @media(min-width:768px) {
+      width: 100px;
+      height: 100px;
+      margin-left: 0;
+    }
+
+    @media(min-width:1024px) {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   &__list {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     margin-top: -100px;
     margin-bottom: 0;
+    padding-right: 30px;
     padding-left: 0;
+    padding-left: 30px;
     list-style: none;
     vertical-align: baseline;
     background: #ffffff;
     border-radius: 3px;
     box-shadow: 0px 5px 100px 0px rgba(102, 102, 102, 0.1);
+
+    @media(max-width:768px) {
+      padding-top: 30px;
+    }
+
+    @media(min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    @media(min-width: 1024px) {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
-  &__item {}
+  &__item {
+    position: relative;
+    margin-top: 30px;
+
+    @media(min-width:1024px) {
+      margin-top: 0;
+    }
+
+    @media(max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .advantage {
-  position: relative;
+  padding-top: 40px;
+  text-align: center;
+
+  @media(min-width: 1024px) {
+    padding-top: 0;
+    text-align: left;
+  }
 
   &::before {
     position: absolute;
-    top: 42px;
-    left: 0;
+    top: 0;
+    left: calc(50% - 40px);
+
+    @media(min-width: 1024px) {
+      top: 42px;
+      left: 0;
+    }
   }
 
   &--time {
@@ -46,10 +97,15 @@
   &--designers {
     &::before {
       content: url("../img/smiles/artist.webp");
-      top: 25px;
-      left: 0;
+      left: calc(50% - 50px);
       width: 100px;
       height: 100px;
+
+      @media(min-width: 1024px) {
+        top: 25px;
+        left: 0;
+      }
+
     }
   }
 
@@ -64,9 +120,14 @@
   &__title {
     margin-top: 50px;
     margin-bottom: 0;
-    padding-left: 90px;
+    padding-left: 0;
     font-weight: 600;
-    font-size: 70px;
+    font-size: 40px;
+
+    @media(min-width: 1024px) {
+      padding-left: 90px;
+      font-size: 70px;
+    }
   }
 
   &__text {
