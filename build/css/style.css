@@ -1239,7 +1239,8 @@ img {
 .form__button {
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-size: 16px; }
   .form__button img {
     width: 15px;
     height: auto;

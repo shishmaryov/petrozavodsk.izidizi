@@ -88,6 +88,20 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  $('#buttonPlanDownload').click(function () {
+    $("#formPlanDownload").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
+});
+
+$(document).ready(function () {
+  $('#closeFormPlanDownload').click(function () {
+    $("#formPlanDownload").removeClass("form__wrapper--active");
+    $('.modal__overlay').removeClass('modal__overlay--active');
+  });
+});
+
+$(document).ready(function () {
   $('#buttonConcept').click(function () {
     $("#formConcept").toggleClass("form__wrapper--active");
     $('.modal__overlay').addClass('modal__overlay--active');
@@ -102,6 +116,20 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  $('#buttonConceptDownload').click(function () {
+    $("#formConceptDownload").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
+});
+
+$(document).ready(function () {
+  $('#closeFormConceptDownload').click(function () {
+    $("#formConceptDownload").removeClass("form__wrapper--active");
+    $('.modal__overlay').removeClass('modal__overlay--active');
+  });
+});
+
+$(document).ready(function () {
   $('#buttonProject').click(function () {
     $("#formProject").toggleClass("form__wrapper--active");
     $('.modal__overlay').addClass('modal__overlay--active');
@@ -111,6 +139,20 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('#closeFormProject').click(function () {
     $("#formProject").removeClass("form__wrapper--active");
+    $('.modal__overlay').removeClass('modal__overlay--active');
+  });
+});
+
+$(document).ready(function () {
+  $('#buttonProjectDownload').click(function () {
+    $("#formProjectDownload").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
+});
+
+$(document).ready(function () {
+  $('#closeFormProjectDownload').click(function () {
+    $("#formProjectDownload").removeClass("form__wrapper--active");
     $('.modal__overlay').removeClass('modal__overlay--active');
   });
 });
@@ -304,6 +346,64 @@ validateForms(
 
 validateForms(
   '.form--8', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);
+
+
+validateForms(
+  '.form--9', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);
+
+validateForms(
+  '.form--10', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);
+
+validateForms(
+  '.form--11', {
     name: {
       required: true,
       minLength: 3,

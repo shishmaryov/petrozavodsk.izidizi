@@ -158,9 +158,9 @@
         <button type="button" class="button service__button" id="buttonPlan">Заказать ОП! Планировочку</button>
       </div>
       <div class="service__img-wrapper">
-        <a href="" class="service__download">
+        <span id="buttonPlanDownload" class="service__download">
           <img src="img/icons/download.svg" alt="Скачать проект">
-        </a>
+        </span>
         <picture>
           <source srcset="img/content-images/plan.jpg" type="image/jpg">
           <img src="img/content-images/plan.webp" alt="Планировка от 2 200 ₽ и 6 дней" class="service__img">
@@ -169,9 +169,9 @@
     </div>
     <div class="service services__item">
       <div class="service__img-wrapper">
-        <a href="" class="service__download">
+        <span id="buttonConceptDownload" class="service__download">
           <img src="img/icons/download.svg" alt="Скачать проект">
-        </a>
+        </span>
         <picture>
           <source srcset="img/content-images/concept-design.jpg" type="image/jpg">
           <img src="img/content-images/concept-design.webp" alt="Концептуальный дизайн и 3D-модель от 3 200 ₽ и 5 дней"
@@ -201,9 +201,9 @@
         <button type="button" id="buttonProject" class="button service__button">Заказать дизайн-проект</button>
       </div>
       <div class="service__img-wrapper">
-        <a href="" class="service__download">
+        <span id="buttonProjectDownload" class="service__download">
           <img src="img/icons/download.svg" alt="Скачать проект">
-        </a>
+        </span>
         <picture>
           <source srcset="img/content-images/design-project.jpg" type="image/jpg">
           <img src="img/content-images/design-project.webp" alt="Дизайн-проект от 31 900 ₽ и 30 дней"
@@ -474,8 +474,10 @@
           data-validate-field="name">
         <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
           data-validate-field="tel">
-        <button type="submit" class="button form__button">Смотреть работы
-          <img src="img/icons/arrow-up.svg" alt="">
+        <button type="submit" class="button form__button">
+          <a href="https://id.pinterest.com/izidizi_com/" target="_blank" class="form__link">
+            Смотреть работы
+            <img src="img/icons/arrow-up.svg" alt=""></a>
         </button>
       </form>
     </div>
@@ -505,6 +507,35 @@
         </button>
       </form>
     </div>
+    <div class="form__wrapper form--call__wrapper" id="formPlanDownload">
+      <span id="closeFormPlanDownload" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
+            <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+              x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+              x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+          </g>
+        </svg>
+      </span>
+      <h2 class="form__title">Вы переходите к скачиванию примера проекта</h2>
+      <p class="form__text">Заполните форму ниже для продолжения скачивания проекта</p>
+      <form action="mail.php" method="POST" class="form form--5" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
+        <input type="hidden" name="form_subject" value="Заказ планировки">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
+          data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
+          data-validate-field="tel">
+          <a href="img/content-images/plan.jpg" target="_blank" class="form__link">
+            <button type="submit" class="button form__button">
+            Скачать "ОП! Планировочку"
+          </button>
+        </a>
+
+      </form>
+    </div>
     <div class="form__wrapper form--call__wrapper" id="formConcept">
       <span id="closeFormConcept" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
@@ -520,7 +551,7 @@
       <h2 class="form__title">Заказ дизайн-концепции</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="mail.php" method="POST" class="form form--5" enctype="multipart/form-data">
+      <form action="mail.php" method="POST" class="form form--6" enctype="multipart/form-data">
         <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
         <input type="hidden" name="form_subject" value="Заказ дизайн-концепции">
         <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
@@ -529,6 +560,35 @@
           data-validate-field="tel">
         <button type="submit" class="button form__button">Заказать дизайн-концепцию
         </button>
+      </form>
+    </div>
+    <div class="form__wrapper form--call__wrapper" id="formConceptDownload">
+      <span id="closeFormConceptDownload" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
+            <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+              x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+              x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+          </g>
+        </svg>
+      </span>
+      <h2 class="form__title">Вы переходите к скачиванию примера проекта</h2>
+      <p class="form__text">Заполните форму ниже для продолжения скачивания проекта</p>
+      <form action="mail.php" method="POST" class="form form--7" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
+        <input type="hidden" name="form_subject" value="Заказ планировки">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
+          data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
+          data-validate-field="tel">
+          <a href="img/content-images/design-project.jpg" target="_blank" class="form__link">
+            <button type="submit" class="button form__button">
+              Cкачать дизайн-концепцию
+          </button>
+        </a>
+
       </form>
     </div>
     <div class="form__wrapper form--call__wrapper" id="formProject">
@@ -546,7 +606,7 @@
       <h2 class="form__title">Заказ дизайн-проекта</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="mail.php" method="POST" class="form form--6" enctype="multipart/form-data">
+      <form action="mail.php" method="POST" class="form form--8" enctype="multipart/form-data">
         <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
         <input type="hidden" name="form_subject" value="Заказ дизайн-проекта">
         <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
@@ -555,6 +615,35 @@
           data-validate-field="tel">
         <button type="submit" class="button form__button">Заказать дизайн-проект
         </button>
+      </form>
+    </div>
+    <div class="form__wrapper form--call__wrapper" id="formProjectDownload">
+      <span id="closeFormProjectDownload" class="form__close">
+        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
+            <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+              x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+              x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+          </g>
+        </svg>
+      </span>
+      <h2 class="form__title">Вы переходите к скачиванию примера проекта</h2>
+      <p class="form__text">Заполните форму ниже для продолжения скачивания проекта</p>
+      <form action="mail.php" method="POST" class="form form--9" enctype="multipart/form-data">
+        <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
+        <input type="hidden" name="form_subject" value="Заказ планировки">
+        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
+          data-validate-field="name">
+        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
+          data-validate-field="tel">
+          <a href="img/content-images/design-project.jpg" target="_blank" class="form__link">
+            <button type="submit" class="button form__button">
+              Cкачать дизайн-проект
+          </button>
+        </a>
+
       </form>
     </div>
     <div class="form__wrapper form--call__wrapper" id="formQuestion">
@@ -572,7 +661,7 @@
       <h2 class="form__title">Возник вопрос?</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="mail.php" method="POST" class="form form--7">
+      <form action="mail.php" method="POST" class="form form--10">
         <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
         <input type="hidden" name="form_subject" value="Заявка на консультацию">
         <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
@@ -600,7 +689,7 @@
       <h2 class="form__title">Оставьте заявку прямо сейчас и получите расчёт стоимости бесплатно</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="mail.php" method="POST" class="form form--8" enctype="multipart/form-data">
+      <form action="mail.php" method="POST" class="form form--11" enctype="multipart/form-data">
         <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
         <input type="hidden" name="form_subject" value="Заказ дизайн-проекта">
         <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
