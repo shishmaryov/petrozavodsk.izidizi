@@ -135,25 +135,25 @@ var selector = document.querySelectorAll('input[type="tel"]');
 var im = new Inputmask("+7 (999) 999-99-99");
 im.mask(selector);
 
-var validateForms = function(selector, rules, messages, succesModal, yaGoal) {
+var validateForms = function (selector, rules, messages, succesModal, yaGoal) {
   new window.JustValidate(selector, {
     rules: rules,
     messages: messages,
-    submitHandler: function(form) {
+    submitHandler: function (form) {
       var formData = new FormData(form);
 
       var xhr = new XMLHttpRequest();
 
       xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            document.querySelector(selector).innerHTML = '<h3 class="thanks__text">Спасибо! Данные успешно отправлены</h3>';
-            console.log('Отправлено');
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              console.log('Отправлено');
+              document.querySelector(selector).innerHTML = '<h3 class="thanks__text">Спасибо! Данные успешно отправлены</h3>';
+            }
           }
-        }
-      },
+        },
 
-      xhr.open('POST', '../mail.php', true);
+        xhr.open('POST', '../mail.php', true);
       xhr.send(formData);
 
       form.reset();
@@ -164,179 +164,159 @@ var validateForms = function(selector, rules, messages, succesModal, yaGoal) {
 
 
 validateForms(
-  '.form',
-{
-  name:{
-    required: true,
-    minLength: 3,
-    maxLength: 30
-  },
-  tel:{
-    required: true,
-    minLength: 10,
-    maxLength: 30
-  },
-},
-{
-  name: 'Введите имя',
-  tel: 'Введите корректный номер телефона'
-},
-  'send-goal'
-  );
-
-
-
-  validateForms(
-    '.form--2',
-  {
-    name:{
+  '.form', {
+    name: {
       required: true,
       minLength: 3,
       maxLength: 30
     },
-    tel:{
+    tel: {
       required: true,
       minLength: 10,
       maxLength: 30
     },
-  },
-  {
+  }, {
     name: 'Введите имя',
     tel: 'Введите корректный номер телефона'
   },
-  $('.form--2').innerHTML = '<h3 class="thanks__text">Спасибо! Данные успешно отправлены</h3>',
-    'send-goal'
-    );
+  'send-goal'
+);
 
-    validateForms(
-      '.form--3',
-    {
-      name:{
+  validateForms(
+    '.form--2', {
+      name: {
         required: true,
         minLength: 3,
         maxLength: 30
       },
-      tel:{
+      tel: {
         required: true,
         minLength: 10,
         maxLength: 30
       },
-    },
-    {
+    }, {
       name: 'Введите имя',
       tel: 'Введите корректный номер телефона'
     },
-      '.thanks-popup',
-      'send-goal'
-      );
+    'send-goal'
+  );
 
-      validateForms(
-        '.form--4',
-      {
-        name:{
-          required: true,
-          minLength: 3,
-          maxLength: 30
-        },
-        tel:{
-          required: true,
-          minLength: 10,
-          maxLength: 30
-        },
-      },
-      {
-        name: 'Введите имя',
-        tel: 'Введите корректный номер телефона'
-      },
-        '.thanks-popup',
-        'send-goal'
-        );
 
-        validateForms(
-          '.form--5',
-        {
-          name:{
-            required: true,
-            minLength: 3,
-            maxLength: 30
-          },
-          tel:{
-            required: true,
-            minLength: 10,
-            maxLength: 30
-          },
-        },
-        {
-          name: 'Введите имя',
-          tel: 'Введите корректный номер телефона'
-        },
-          '.thanks-popup',
-          'send-goal'
-          );
 
-          validateForms(
-            '.form--6',
-          {
-            name:{
-              required: true,
-              minLength: 3,
-              maxLength: 30
-            },
-            tel:{
-              required: true,
-              minLength: 10,
-              maxLength: 30
-            },
-          },
-          {
-            name: 'Введите имя',
-            tel: 'Введите корректный номер телефона'
-          },
-            '.thanks-popup',
-            'send-goal'
-            );
+validateForms(
+  '.form--3', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);
 
-            validateForms(
-              '.form--7',
-            {
-              name:{
-                required: true,
-                minLength: 3,
-                maxLength: 30
-              },
-              tel:{
-                required: true,
-                minLength: 10,
-                maxLength: 30
-              },
-            },
-            {
-              name: 'Введите имя',
-              tel: 'Введите корректный номер телефона'
-            },
-              '.thanks-popup',
-              'send-goal'
-              );
+validateForms(
+  '.form--4', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);
 
-              validateForms(
-                '.form--8',
-              {
-                name:{
-                  required: true,
-                  minLength: 3,
-                  maxLength: 30
-                },
-                tel:{
-                  required: true,
-                  minLength: 10,
-                  maxLength: 30
-                },
-              },
-              {
-                name: 'Введите имя',
-                tel: 'Введите корректный номер телефона'
-              },
-                '.thanks-popup',
-                'send-goal'
-                );
+validateForms(
+  '.form--5', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);
 
+validateForms(
+  '.form--6', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);
+
+validateForms(
+  '.form--7', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);
+
+
+
+
+
+validateForms(
+  '.form--8', {
+    name: {
+      required: true,
+      minLength: 3,
+      maxLength: 30
+    },
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 30
+    },
+  }, {
+    name: 'Введите имя',
+    tel: 'Введите корректный номер телефона'
+  },
+  'send-goal'
+);

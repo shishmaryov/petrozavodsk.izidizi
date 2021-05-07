@@ -67,7 +67,9 @@
       </h1>
       <p class="promo__text">Сделаем интерьер удобным и современным, а вы сэкономите на ремонте квартиры</p>
       <div class="flex-sb">
-        <button id="buttonFormDownload" class="button promo__button">Скачать пример проекта</button>
+        <button id="buttonFormDownload" class="button promo__button">
+          Скачать пример проекта
+        </button>
         <div class="indicators promo__indicators">
           <ul class="indicators__list">
             <li class="indicator indicator--time indicators__item">
@@ -446,7 +448,8 @@
           data-validate-field="name">
         <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
           data-validate-field="tel">
-        <button type="submit" class="button form__button">Скачать пример</button>
+        <button type="submit" class="button form__button">
+          <a href="img/content-images/repair.jpg" class="form__link form--2__link" target="_blank">Скачать пример</a></button>
       </form>
     </div>
     <div class="form__wrapper form--call__wrapper" id="formGallery">
@@ -597,7 +600,7 @@
       <h2 class="form__title">Оставьте заявку прямо сейчас и получите расчёт стоимости бесплатно</h2>
       <p class="form__text">Заполните форму ниже и мы свяжемся
         для дальнейшей консультации</p>
-      <form action="mail.php" method="POST" class="form form8" enctype="multipart/form-data">
+      <form action="mail.php" method="POST" class="form form--8" enctype="multipart/form-data">
         <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
         <input type="hidden" name="form_subject" value="Заказ дизайн-проекта">
         <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
