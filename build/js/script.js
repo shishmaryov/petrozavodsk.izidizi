@@ -200,11 +200,19 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('#buttonFranch').click(function () {
+    $("#formFranch").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
+});
 
-
-var selector = document.querySelectorAll('input[type="tel"]');
-var im = new Inputmask("+7 (999) 999-99-99");
-im.mask(selector);
+$(document).ready(function () {
+  $('#closeFormFranch').click(function () {
+    $("#formFranch").removeClass("form__wrapper--active");
+    $('.modal__overlay').removeClass('modal__overlay--active');
+  });
+});
 
 var validateForms = function (selector, rules, messages, succesModal, yaGoal) {
   new window.JustValidate(selector, {
