@@ -1,0 +1,37 @@
+.section {
+  margin-bottom: 75px;
+
+  &__title {
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+
+  &__link {
+    text-decoration: none;
+
+  }
+
+  &__link--orange {
+    color: rgb(235, 121, 45);
+  }
+}
