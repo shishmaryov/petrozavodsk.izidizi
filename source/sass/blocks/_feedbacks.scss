@@ -20,12 +20,12 @@
 
   &__img {
     width: 320px;
-    height: auto;
+    height: 505px;
 
 
     @media(min-width: 768px) {
       width: 560px;
-      height: auto;
+      height: 883px;
       margin-left: calc(50% - 280px);
     }
   }
