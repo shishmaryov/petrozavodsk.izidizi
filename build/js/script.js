@@ -53,13 +53,6 @@ $(document).ready(function () {
   };
 });
 
-[].forEach.call(document.querySelectorAll('source[data-srcset]'), function(img) {
-  source.setAttribute('srcset', source.getAttribute('data-srcset'));
-  source.onload = function() {
-  source.removeAttribute('data-srcset');
-  };
-});
-
 
 $(document).ready(function () {
   $('.button--phone').click(function () {
