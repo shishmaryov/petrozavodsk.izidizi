@@ -1442,6 +1442,8 @@ img {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
+  .contact__text-block {
+    padding-bottom: 50px; }
   .contact__title {
     margin-bottom: 50px;
     padding-top: 50px;
@@ -1507,17 +1509,18 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 auto; }
-    @media (max-width: 1023px) {
+    margin: 0 auto;
+    margin-bottom: 50px; }
+    @media (min-width: 1024px) {
       .contact__button {
-        margin-bottom: 50px; } }
+        margin: 0; } }
   .contact__map {
     width: 100%;
     height: 500px; }
     @media (min-width: 1024px) {
       .contact__map {
         width: 940px;
-        height: 720px; } }
+        height: 780px; } }
 
 .social__icons {
   display: -webkit-box;

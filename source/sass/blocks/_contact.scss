@@ -10,7 +10,9 @@
     }
   }
 
-  &__text-block {}
+  &__text-block {
+    padding-bottom: 50px;
+  }
 
   &__title {
     margin-bottom: 50px;
@@ -102,9 +104,10 @@
   &__button {
     display: flex;
     margin: 0 auto;
+    margin-bottom: 50px;
 
-    @media(max-width: 1023px) {
-      margin-bottom: 50px;
+    @media(min-width:1024px){
+      margin: 0;
     }
   }
 
@@ -114,7 +117,7 @@
 
     @media(min-width: 1024px) {
       width: 940px;
-      height: 720px;
+      height: 780px;
     }
   }
 }
