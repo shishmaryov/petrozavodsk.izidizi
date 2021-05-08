@@ -4,8 +4,17 @@
     position: fixed;
     display: none;
     padding: 40px 45px;
-    background: #fff;
+    background: #fcfbfa;
     border-radius: 2px;
+    top: 0;
+    left: 0;
+
+    @media(min-width:768px){
+      max-width: 450px;
+      left: calc(50% - 270px);
+      top: calc(50% - 228px);
+      width: auto;
+    }
 
     &--active {
       display: block;
@@ -15,23 +24,35 @@
   &__close {
     position: absolute;
     top: 45px;
-    right: 45px;
+    right: 15px;
     cursor: pointer;
+
+    @media(min-width:768px){
+      right: 45px;
+    }
   }
 
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
     color: #1b1818;
+
+    @media(min-width:768px){
+      font-size: 32px;
+    }
   }
 
   &__text {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.25;
     color: #605e5e;
+
+    @media(min-width:768px){
+      font-size: 20px;
+    }
   }
 
   &__input {
@@ -50,7 +71,9 @@
 
     &--name {}
 
-    &--tel {}
+    &--tel {
+
+    }
   }
 
   &__button {
@@ -58,13 +81,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 16px;
+  }
 
-    img {
-      width: 15px;
-      height: auto;
-      margin-bottom: -3px;
-      margin-left: 5px;
-    }
+  &__arrow {
+    width: 15px;
+    height: auto;
+    margin-bottom: -3px;
+    margin-left: 5px;
   }
 
   &__link {
@@ -75,9 +98,7 @@
   &--call {
 
     &__wrapper {
-      top: calc(50% - 228px);
-      left: calc(50% - 270px);
-      max-width: 450px;
+
     }
   }
 }

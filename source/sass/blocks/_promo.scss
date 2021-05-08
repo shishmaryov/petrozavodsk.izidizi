@@ -1,8 +1,12 @@
 .promo {
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   background-image: url("../img/backgrounds/promo-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media(min-width:768px){
+    padding-bottom: 150px;
+  }
 
   &__title {
     position: relative;

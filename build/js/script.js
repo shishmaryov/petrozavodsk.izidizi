@@ -186,6 +186,20 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('#buttonRequisites').click(function () {
+    $("#formRequisites").toggleClass("form__wrapper--active");
+    $('.modal__overlay').addClass('modal__overlay--active');
+  });
+});
+
+$(document).ready(function () {
+  $('#closeFormRequisites').click(function () {
+    $("#formRequisites").removeClass("form__wrapper--active");
+    $('.modal__overlay').removeClass('modal__overlay--active');
+  });
+});
+
 
 
 var selector = document.querySelectorAll('input[type="tel"]');

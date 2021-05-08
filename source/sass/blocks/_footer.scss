@@ -8,15 +8,31 @@
     text-align: center;
   }
 
-  .nav__link {
-    font-size: 18px;
-    color: #000;
+  .nav {
+    &__link {
+      font-size: 18px;
+      color: #000;
 
-    @media(max-width: 1023px) {
-      padding: 0 10px;
-      line-height: 2;
+      @media(max-width: 1023px) {
+        padding: 0 10px;
+        line-height: 2;
+      }
+    }
+
+    &__button {
+      padding-right: 10px;
+      padding-bottom: 0px;
+      font-size: 18px;
+      text-align: right;
+      color: #111;
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 1.55;
+      border: none;
+      background: transparent;
     }
   }
+
 
   &__link {
     position: relative;
@@ -25,7 +41,6 @@
     font-size: 18px;
     text-align: right;
     color: #111;
-    text-decoration: none;
 
     &::after {
       content: url("../img/icons/arrow-up.svg");
