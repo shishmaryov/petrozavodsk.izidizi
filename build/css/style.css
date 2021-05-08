@@ -454,7 +454,13 @@ th {
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+img[data-src] {
+  opacity: 0; }
 
 .button {
   font-size: 18px;

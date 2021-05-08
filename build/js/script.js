@@ -46,6 +46,21 @@ $(document).ready(function () {
 });
 
 
+[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+  img.removeAttribute('data-src');
+  };
+});
+
+[].forEach.call(document.querySelectorAll('source[data-srcset]'), function(img) {
+  source.setAttribute('srcset', source.getAttribute('data-srcset'));
+  source.onload = function() {
+  source.removeAttribute('data-srcset');
+  };
+});
+
+
 $(document).ready(function () {
   $('.button--phone').click(function () {
     $("#formPhone").toggleClass("form__wrapper--active");
