@@ -71,11 +71,13 @@
   }
 
   &__button {
-
+    padding: 20px 30px;
+    width: 100%;
 
     @media(min-width:768px) {
       width: 330px;
       height: 85px;
+      padding: 20px 40px;
     }
   }
 
