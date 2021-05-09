@@ -11,6 +11,10 @@
     line-height: 1.55;
     color: #ffffff;
     text-decoration: none;
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 
   &__button {

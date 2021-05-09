@@ -5,6 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <!-- Краткое описание страницы  -->
+  <meta name="description" content="">
+  <!-- Не более 140 символов -->
+
+  <!-- Ключевые слова страницы  -->
+  <meta name="keywords" content="">
+  <!-- Не более 20ти слов. Ключевые фразы разделяем запятой. -->
+
+  <!--Для социальных сетей-->
+  <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+  <meta property="og:title" content="">
+  <!-- описание страницы -->
+  <meta property="og:description" content="">
+  <!-- ссылка на изображение, которое будет публиковаться в записи -->
+  <meta property="og:image" content="">
+  <!-- название сайта -->
+  <meta property="og:site_name" content="">
+
+  <!-- Технические -->
+  <!-- Автор страницы -->
+  <meta name="Author" content="">
+  <!-- Авторские права -->
+  <meta name="Copyright" content="">
+  <!-- Адрес автора -->
+  <meta name="Address" content="">
+
   <title>Дизайн интерьера на изи</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -12,7 +39,7 @@
 <body class="index-page">
   <section id="promo" class="promo">
     <div class="container">
-      <header class="header--fixed">
+      <header class="header--fixed wow animate__animated animate__fadeInDown">
         <div class="container">
           <img data-src="img/logotypes/header-logo-blue.svg" alt="izidizi.com" class="header--fixed__logo">
           <nav class="nav header__nav">
@@ -36,7 +63,7 @@
           </div>
         </div>
       </header>
-      <header class="header index-page__header">
+      <header class="header index-page__header wow animate__animated animate__fadeInDown">
         <div class="header__left">
           <img data-src="img/logotypes/header-logo.svg" alt="izidizi.com" class="logo header__logo">
           <nav class="nav header__nav">
@@ -62,7 +89,7 @@
         </div>
         <a href="#" class="header__burger"><span></span></a>
       </header>
-      <nav class="nav--mobile">
+      <nav class="nav--mobile wow animate__animated animate__fadeInDown">
         <span class="nav--mobile__close">
           <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -97,10 +124,10 @@
       </h1>
       <p class="promo__text">Сделаем интерьер удобным и современным, а вы сэкономите на ремонте квартиры</p>
       <div class="promo__flex-sb">
-        <button id="buttonFormDownload" class="button promo__button">
+        <button id="buttonFormDownload" class="button promo__button wow animate__animated animate__fadeIn">
           Скачать пример проекта
         </button>
-        <div class="indicators promo__indicators">
+        <div class="indicators promo__indicators wow animate__animated animate__fadeInRight">
           <ul class="indicators__list">
             <li class="indicator indicator--time indicators__item">
               <h2 class="indicator__title">5 дней</h2>
@@ -420,9 +447,14 @@
         <button class="button contact__button" id="buttonQuestion">Задать вопрос</button>
       </div>
       <div class="contact__map" style="position:relative;overflow:hidden;">
-        <a href="https://yandex.ru/maps/org/izidizi/51395318273/?utm_medium=mapframe&utm_source=maps" style="color:#fff;font-size:12px;position:absolute;top:0px;">Izidizi</a><a href="https://yandex.ru/maps/18/petrozavodsk/category/interior_design/184107539/?utm_medium=mapframe&utm_source=maps" style="color:#fff;font-size:12px;position:absolute;top:14px;">Дизайн интерьеров в Петрозаводске</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUY7PrMgB" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        <a href="https://yandex.ru/maps/org/izidizi/51395318273/?utm_medium=mapframe&utm_source=maps"
+          style="color:#fff;font-size:12px;position:absolute;top:0px;">Izidizi</a><a
+          href="https://yandex.ru/maps/18/petrozavodsk/category/interior_design/184107539/?utm_medium=mapframe&utm_source=maps"
+          style="color:#fff;font-size:12px;position:absolute;top:14px;">Дизайн интерьеров в Петрозаводске</a><iframe
+          src="https://yandex.ru/map-widget/v1/-/CCUY7PrMgB" width="100%" height="100%" frameborder="1"
+          allowfullscreen="true" style="position:relative;"></iframe>
       </div>
-      </div>
+    </div>
   </section>
   <footer class="container footer index-page__footer">
     <div class="social__icons">
@@ -446,16 +478,17 @@
     <nav class="nav footer__nav">
       <a href="offer.html" target="_blank" class="nav__link">Публичная оферта</a>
       <a href="https://petrozavodsk.izidizi.com/offer2" target="_blank" class="nav__link">Публичная оферта (КДП)</a>
-      <a href="https://petrozavodsk.izidizi.com/policy" target="_blank" class="nav__link">Политика конфиденциальности</a>
+      <a href="https://petrozavodsk.izidizi.com/policy" target="_blank" class="nav__link">Политика
+        конфиденциальности</a>
       <a href="https://petrozavodsk.izidizi.com/pricing" target="_blank" class="nav__link">Цены</a>
       <span id="buttonRequisites" class="nav__button">Реквизиты</span>
       <span id="buttonFranch" class="nav__button">Франшиза</span>
       <a href="#promo" class="nav__link footer__link">Наверх</a>
     </nav>
   </footer>
-  <section loading="lazy" class="modal">
+  <section loading="lazy" class="modal wow animate__animated animate__fadeIn">
     <div class="modal__overlay"></div>
-    <div class="form__wrapper form--call__wrapper" id="formPhone">
+    <div class="form__wrapper form--call__wrapper wow animate__animated animate__fadeIn" id="formPhone">
       <span id="closeFormPhone" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -481,7 +514,7 @@
         </button>
       </form>
     </div>
-    <div class="form__wrapper" id="formDownload">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formDownload">
       <span id="closeFormDownload" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -509,7 +542,7 @@
 
       </form>
     </div>
-    <div class="form__wrapper" id="formGallery">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formGallery">
       <span id="closeFormGallery" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -540,7 +573,7 @@
 
       </form>
     </div>
-    <div class="form__wrapper" id="formPlan">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formPlan">
       <span id="closeFormPlan" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -565,7 +598,7 @@
         <button type="submit" class="button form__button">Заказать "ОП! Планировочку"</button>
       </form>
     </div>
-    <div class="form__wrapper" id="formPlanDownload">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formPlanDownload">
       <span id="closeFormPlanDownload" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -594,7 +627,7 @@
         </a>
       </form>
     </div>
-    <div class="form__wrapper" id="formConcept">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formConcept">
       <span id="closeFormConcept" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -619,7 +652,7 @@
         <button type="submit" class="button form__button">Заказать дизайн-концепцию</button>
       </form>
     </div>
-    <div class="form__wrapper" id="formConceptDownload">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formConceptDownload">
       <span id="closeFormConceptDownload" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -644,7 +677,7 @@
           <button type="submit" class="button form__button">Cкачать дизайн-концепцию</button></a>
       </form>
     </div>
-    <div class="form__wrapper" id="formProject">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formProject">
       <span id="closeFormProject" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -669,7 +702,7 @@
         <button type="submit" class="button form__button">Заказать дизайн-проект</button>
       </form>
     </div>
-    <div class="form__wrapper" id="formProjectDownload">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formProjectDownload">
       <span id="closeFormProjectDownload" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -694,36 +727,7 @@
           <button type="submit" class="button form__button">Cкачать дизайн-проект</button></a>
       </form>
     </div>
-    <div class="form__wrapper" id="formQuestion">
-      <span id="closeFormQuestion" class="form__close">
-        <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
-          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
-            <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
-              x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
-            <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
-              x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
-          </g>
-        </svg>
-      </span>
-      <h2 class="form__title">Возник вопрос?</h2>
-      <p class="form__text">Заполните форму ниже и мы свяжемся
-        для дальнейшей консультации</p>
-      <form action="mail.php" method="POST" class="form form--10">
-        <input type="hidden" name="admin_email[]" value="petrozavodsk@izidizi.com">
-        <input type="hidden" name="form_subject" value="Заявка на консультацию">
-        <input type="text" name="name" placeholder="Как вас зовут?" class="form__input form__input--name"
-          data-validate-field="name">
-        <input type="tel" name="phone" placeholder="+7 (999) 999-99-99" class="form__input form__input--tel"
-          data-validate-field="tel">
-        <input type="text" name="question" placeholder="Напишите ваш вопрос здесь" class="form__input">
-        <button type="submit" class="button form__button">
-          Отправить
-          <img data-src="img/icons/arrow-up.svg" alt="" class="form__arrow">
-        </button>
-      </form>
-    </div>
-    <div class="form__wrapper" id="formPrice">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formPrice">
       <span id="closeFormPrice" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -748,7 +752,7 @@
         <button type="submit" class="button form__button">Заказать дизайн-проект</button>
       </form>
     </div>
-    <div class="form__wrapper" id="formQuestion">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formQuestion">
       <span id="closeFormQuestion" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -777,7 +781,7 @@
         </button>
       </form>
     </div>
-    <div class="form__wrapper" id="formRequisites">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formRequisites">
       <span id="closeFormRequisites" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -824,7 +828,7 @@
         30101810845250000999
       </p>
     </div>
-    <div class="form__wrapper" id="formFranch">
+    <div class="form__wrapper wow animate__animated animate__fadeIn" id="formFranch">
       <span id="closeFormFranch" class="form__close">
         <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -859,6 +863,7 @@
   <script src="js/slick.min.js" defer></script>
   <script src="js/fslightbox.js" defer></script>
   <script src="js/just-validate.min.js" defer></script>
+  <script src="js/wow.min.js" defer></script>
   <script src="js/script.min.js" defer></script>
 </body>
 

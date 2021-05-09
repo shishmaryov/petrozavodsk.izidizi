@@ -10,7 +10,8 @@
     list-style: none;
   }
 
-  &__item {}
+  &__item {
+  }
 
   &__link {
     font-weight: 500;
@@ -18,6 +19,10 @@
     line-height: 1.55;
     color: #ffffff;
     text-decoration: none;
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+    }
   }
 
   &__button {
@@ -50,6 +55,7 @@
       align-items: center;
       margin-top: 50px;
       margin-bottom: 50px;
+      width: 100%;
     }
 
     .nav__item {
