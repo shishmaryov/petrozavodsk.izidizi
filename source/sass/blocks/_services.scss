@@ -2,16 +2,16 @@
 
   &__title {
     margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 600;
     font-size: 40px;
     line-height: 1.55;
     text-align: center;
     color: #101010;
-    margin-bottom: 30px;
 
     @media(min-width: 768px) {
-      font-size: 70px;
       margin-bottom: 50px;
+      font-size: 70px;
     }
 
     @media(min-width: 1024px) {
@@ -46,13 +46,13 @@
 
 
   &__text-block {
-    text-align: center;
     margin-bottom: 30px;
+    text-align: center;
 
     @media(min-width:1024px) {
       max-width: 450px;
-      text-align: left;
       margin-bottom: 0;
+      text-align: left;
     }
   }
 
@@ -106,8 +106,8 @@
     top: calc(50% - 72px);
     left: calc(50% - 72px);
     text-decoration: none;
-    cursor: pointer;
     border-radius: 100%;
+    cursor: pointer;
   }
 }
 

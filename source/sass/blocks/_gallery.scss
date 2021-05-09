@@ -32,22 +32,23 @@
   &__img {
     width: 290px;
     height: 280px;
-    object-fit: cover;
-    transition: 1s;
     border-radius: 1px;
+    transition: 1s;
+    object-fit: cover;
+
+    @media(min-width:1024px) {
+      width: 270px;
+      height: 280px;
+    }
+
     &:hover {
-      box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
       transition: 1s;
     }
 
     &:active {
       box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
       transition: 1s;
-    }
-
-    @media(min-width:1024px){
-      width: 270px;
-      height: 280px;
     }
   }
 

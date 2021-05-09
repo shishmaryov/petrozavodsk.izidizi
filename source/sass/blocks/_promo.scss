@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media(min-width:768px){
+  @media(min-width:768px) {
     padding-bottom: 150px;
   }
 
@@ -75,8 +75,8 @@
   }
 
   &__button {
-    padding: 20px 30px;
     width: 100%;
+    padding: 20px 30px;
 
     @media(min-width:768px) {
       width: 330px;

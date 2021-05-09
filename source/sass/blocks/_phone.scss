@@ -19,10 +19,12 @@
     background-color: #ffd600;
     border: none;
     border-radius: 100%;
+
     &:hover {
       box-shadow: 0 0px 5px 0 rgba(0, 40, 120, .35);
       transition: 0.3s;
     }
+
     &:active {
       box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
       transition: 0.3s;

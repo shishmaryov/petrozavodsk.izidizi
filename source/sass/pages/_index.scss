@@ -2,10 +2,10 @@
   font-family: "TTCommons", sans-serif;
 
   &__header {
-    align-items: center;
-    padding-top: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
   }
 
   &__footer {

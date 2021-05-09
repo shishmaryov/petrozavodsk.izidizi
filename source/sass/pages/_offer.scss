@@ -2,27 +2,27 @@
   font-family: "TTCommons", sans-serif;
 
   &__title {
-    line-height: 1.25;
-    font-weight: 600;
     margin-top: 75px;
     margin-bottom: 15px;
-    text-align: center;
+    font-weight: 600;
     font-size: 50px;
+    line-height: 1.25;
+    text-align: center;
   }
 
   &__subtitle {
     margin-top: 0;
     margin-bottom: 50px;
-    color: #666666;
     font-size: 24px;
     text-align: center;
+    color: #666666;
   }
 
   &__text {
     margin-top: 0;
     margin-bottom: 50px;
+    font-size: 18px;
     line-height: 1.45;
     text-align: center;
-    font-size: 18px;
   }
 }

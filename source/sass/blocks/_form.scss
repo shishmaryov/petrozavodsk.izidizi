@@ -2,19 +2,19 @@
 
   &__wrapper {
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
     display: none;
     padding: 40px 45px;
     background: #fcfbfa;
     border-radius: 2px;
-    top: 0;
-    left: 0;
-    z-index: 8;
 
-    @media(min-width:768px){
-      max-width: 450px;
-      left: calc(50% - 270px);
+    @media(min-width:768px) {
       top: calc(50% - 228px);
+      left: calc(50% - 270px);
       width: auto;
+      max-width: 450px;
     }
 
     &--active {
@@ -28,7 +28,7 @@
     right: 15px;
     cursor: pointer;
 
-    @media(min-width:768px){
+    @media(min-width:768px) {
       right: 45px;
     }
   }
@@ -40,7 +40,7 @@
     font-size: 24px;
     color: #1b1818;
 
-    @media(min-width:768px){
+    @media(min-width:768px) {
       font-size: 32px;
     }
   }
@@ -51,7 +51,7 @@
     line-height: 1.25;
     color: #605e5e;
 
-    @media(min-width:768px){
+    @media(min-width:768px) {
       font-size: 20px;
     }
   }
@@ -72,9 +72,7 @@
 
     &--name {}
 
-    &--tel {
-
-    }
+    &--tel {}
   }
 
   &__button {
@@ -92,15 +90,15 @@
   }
 
   &__link {
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: #1b1818;
     text-decoration: none;
   }
 
   &--call {
 
-    &__wrapper {
-
-    }
+    &__wrapper {}
   }
 }
 

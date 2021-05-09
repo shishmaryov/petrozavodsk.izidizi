@@ -10,8 +10,7 @@
     list-style: none;
   }
 
-  &__item {
-  }
+  &__item {}
 
   &__link {
     font-weight: 500;
@@ -19,15 +18,14 @@
     line-height: 1.55;
     color: #ffffff;
     text-decoration: none;
+
     &:hover {
       opacity: 0.8;
       transition: 0.3s;
     }
   }
 
-  &__button {
-
-  }
+  &__button {}
 
   &--mobile {
     position: absolute;
@@ -35,9 +33,9 @@
     right: 0;
     z-index: 7;
     display: none;
+    width: 100%;
     background: #fff;
     border-radius: 3px;
-    width: 100%;
 
     &__close {
       position: absolute;
@@ -53,9 +51,9 @@
     .nav__list {
       flex-direction: column;
       align-items: center;
+      width: 100%;
       margin-top: 50px;
       margin-bottom: 50px;
-      width: 100%;
     }
 
     .nav__item {
